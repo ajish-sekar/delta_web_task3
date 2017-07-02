@@ -14,5 +14,7 @@ create table code (id INT NOT NULL PRIMARY KEY AUTO INCREMENT, snippet LONGTEXT 
 
 
 Then put all the files in the repository in a folder inside the www directory.
+ 
+Create a folder called uploads inside the new folder.
 
 Then access the site using localhost/folder/login.php .
