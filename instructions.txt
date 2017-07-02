@@ -1,0 +1,18 @@
+install and setup wamp server.
+
+create a mysql account with username = "root" and passwrod = ""(blank password).
+
+Then in mysql console type in the following commands:
+
+create database delta_web_3;
+
+use delta_web_3;
+
+create table users ( id INT NOT NULL PRIMARY KEY AUTO INCREMENT, username VARCHAR(50) NOT NULL UNIQUE, password VARCHAR(255) NOT NULL);
+
+create table code (id INT NOT NULL PRIMARY KEY AUTO INCREMENT, snippet LONGTEXT NOT NULL, name VARCHAR(50) NOT NULL UNIQUE, created_by VARCHAR(50) NOT NULL, access VARCHAR(10) NOT NULL, anonymous TINYINT NOT NULL, language VARCHAR(30) NOT NULL);
+
+
+Then put all the files in the repository in a folder inside the www directory.
+
+Then access the site using localhost/folder/login.php .
